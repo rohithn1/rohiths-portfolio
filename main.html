@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rohith Nadimpally</title>
+  <meta name="Rohith Nadimpally" content="">
+  <meta name="Personal Website" content="">
+
+  <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.6.1.min.js">
+	</script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    	var image = 0;
+    	$('#glasses-button').click(function() {
+    		if ($('.content').css('-webkit-filter') == 'blur(5px)') {
+    			$('.content').css('-webkit-filter', 'blur(0px)');
+    			$(this).attr('src','glasses-animation-open.gif');
+    		} else {
+    			$('.content').css('-webkit-filter', 'blur(5px)');
+    			$(this).attr('src','glasses-animation-close.gif');
+    		}
+		});
+		$('#me').click(function() {
+			image++;
+			if (image > 50) {
+				window.open('https://www.instagram.com/row_hit_/', 'name'); 
+			}
+		})
+    });
+    </script>
+</head>
+
+<body>
+	<div class="content">
+		<img id="me" src="me.png" width="200" height="200">
+	</div>
+	<div id="button">
+		<img id="glasses-button" src="glasses-animation-close.gif"  width=100/>
+	</div>
+	<div class="content">
+		<div id="blurb">
+		  	<p>Hey there!</p>
+		    <p>Sorry about that, I'm practically blind without my glasses!</p>
+		    <p>My name is Rohith. I'm currently a Computer Science student at <a target="_blank" rel="noopener noreferrer" href="https://www.purdue.edu/">Purdue</a>.</p>
+		    <p>A little bit about myself, I'm left handed and love to cook.</p>
+		    <p>Learn a bit more about me and my future endeavors <a href="interactiveResume.html">here</a>.</p>
+		    <p>Or my side projects that you can find on my <a target="_blank" rel="noopener noreferrer" href="https://github.com/rohithn1">GitHub</a>.</p>
+		</div>
+		<div id="links">
+		  	<a href="interactiveResume.html"><img class="media" src="icons8-regular-document-96.png" width="25" height="25"></a>
+		  	<a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=rnadimp@purdue.edu"><img class="media" src="icons8-email-send-48.png" width="25" height="25"></a>
+		  	<a target="_blank" rel="noopener noreferrer" href="https://github.com/rohithn1"><img class="media" src="icons8-github-48.png" width="26" height="26"></a>
+		 	<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rohith-nadimpally-860b9217b/"><img class="media" src="icons8-linkedin-50.png" width="25" height="25"></a>
+		</div>
+	</div>
+</body>
+
+</html>

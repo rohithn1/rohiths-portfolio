@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+body {
+	background-color: #fcfcfc;
+}
+
+p {
+	font-family: 'Asap', sans-serif;
+	text-align: center;
+	font-size: 25px;
+	color: #292929;
+}
+
+a {
+	text-decoration: none;
+	color: #2c92db;
+}
+
+#links {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.media:hover {
+	filter:drop-shadow(2px 2px 2px gray); 
+}
+
+.content {
+	padding-top: 50px;
+	text-align: center;
+	filter: blur(1px);
+    filter: url("blur.svg#gaussian_blur");
+    -webkit-filter: blur(5px);
+}
+
+#button {
+	text-align: center;
+	cursor: pointer;
+}
+
+
+
+#me {
+	padding-bottom: 50px;
+}
